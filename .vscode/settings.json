@@ -1,0 +1,28 @@
+{
+  "typescript.tsdk": "node_modules/.pnpm/typescript@5.0.3/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.pnpm-store": true
+  },
+  "[javascript][typescript][javascriptreact][typescriptreact][css][scss][json]": {
+    "editor.tabSize": 2,
+  },
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "git.autofetch": true,
+  "git.branchPrefix": "RC-TA-",
+  "gitlens.telemetry.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Tokyo Night",
+}
