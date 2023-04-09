@@ -14,8 +14,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
   const { id } = params
 
   const coins: { data: Asset[] } = await fetch(
-    `${COINCAP_API_URL}/assets?limit=2000`,
-    { next: { revalidate: 60 } }
+    `${COINCAP_API_URL}/assets?limit=2000`
   ).then(res => res.json())
 
   const coinData = coins.data.find(coin => coin.id === id)
