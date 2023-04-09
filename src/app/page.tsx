@@ -14,7 +14,9 @@ export default async function Home() {
       <ul>
         {coins.data.map(coin => (
           <li key={coin.id}>
-            <Link href={`/coin/${coin.id}`}>{coin.id}</Link>
+            <Link href={`/coin/${coin.id}`} prefetch={false}>
+              {coin.id}
+            </Link>
           </li>
         ))}
       </ul>
