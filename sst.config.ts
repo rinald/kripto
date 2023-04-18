@@ -11,6 +11,7 @@ export default {
   stacks(app) {
     app.stack(function Site({ stack }) {
       const site = new NextjsSite(stack, "site", {
+        buildCommand: 'pnpx open-next@^1.0.0 build',
         edge: true,
       });
 
