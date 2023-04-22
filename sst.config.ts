@@ -11,7 +11,7 @@ export default {
   stacks(app) {
     app.stack(function Site({ stack }) {
       const site = new NextjsSite(stack, "site", {
-        edge: true,
+        // edge: true,
       });
 
       stack.addOutputs({
